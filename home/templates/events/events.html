@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/assets/css/events.css' %}">
+    <title>Events</title>
+    <style>
+        body{
+            background: url("{% static 'home/assets/img/events/jazmin-quaynor-8ioenvmof-I-unsplash.jpg' %}");
+            background-size: cover;
+            color: rgb(78, 78, 78);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="{% url 'events'%}"><img src="{% static 'home/assets/img/events/logo.png' %}" alt="" class="logo"></a>
+        <ul class="links">
+            <li><a href="{% url 'home'%}" class="link">Home</a></li>
+            <li><a href="{% url 'venue'%}" class="link">Venues</a></li>
+            <li><a href="{% url 'decoration'%}" class="link">Decoration</a></li>
+            <li><a href="{% url 'photography'%}" class="link">Photography</a></li>
+            <li><a href="{% url 'home'%}#contact" class="link">Contact</a></li>
+            <li><a href="{% url 'register'%}" class="link">Login</a></li>
+        </ul>
+    </header>
+
+    <div class="main">
+
+        <div class="container">
+            <h1 class="container-head">Ring Ceremony</h1>
+            <img src="{% static 'home/assets/img/events/ring2.jfif' %}" alt="" class="img">
+            <p class="para">A Wedding Ring or Wedding Band is a finger ring that indicates that its wearer is married. It is usually forged from metal, and traditionally is forged of gold or another precious metal.
+                <a href="#" id="ring" class="view">View More</a></p>
+        </div>
+
+        <div class="container">
+            <h1 class="container-head">Wedding</h1>
+            <img src="{% static 'home/assets/img/events/wedding.jfif' %}" alt="" class="img">
+            <p class="para">A Wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes.
+                <a href="#" id="wedding" class="view">View More</a></p>
+        </div>
+
+        <div class="container">
+            <h1 class="container-head">Reception</h1>
+            <img src="{% static 'home/assets/img/events/reception2.jfif' %}" alt="" class="img">
+            <p class="para">A Wedding Reception is a party usually held after the completion of a marriage ceremony as hospitality for those who have attended the wedding, hence the name reception.
+                <a href="#" id="reception" class="view">View More</a></p>
+        </div>
+    </div>
+
+    <div class="blur"></div>
+    
+    <div class="content-container">
+        <img src="{% static 'home/assets/img/events/plus-circle-solid.svg' %}" alt="" class="close">
+        <div class="content" id="c1">ringceremony</div>
+        <div class="content" id="c2">wedding</div>
+        <div class="content" id="c3">reception</div>
+    </div>
+    <script src="{% static 'home/assets/js/events.js' %}"></script>
+</body>
+</html>
