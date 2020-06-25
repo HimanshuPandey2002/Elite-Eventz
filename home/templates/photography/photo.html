@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'home/assets/css/photography.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/style.css' %}">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
@@ -17,7 +28,7 @@
     <title>Photography</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <a href="{% url 'decoration'%}"><img src="{% static 'home/assets/img/photography/logo.png' %}" alt="" class="logo"></a>
         <ul class="links">
             <li><a href="{% url 'home'%}" class="link">Home</a></li>
@@ -27,14 +38,56 @@
             <li><a href="{% url 'home'%}#contact" class="link">Contact</a></li>
             <li><a href="{% url 'register'%}" class="link">Login</a></li>
         </ul>
+    </header> -->
+
+    <header>
+        <!-- Header Start -->
+       <div class="header-area">
+            <div class="main-header ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <div class="logo">
+                                <a href="{% url 'home'%}"><img src="{% static 'home/assets/img/logo/logo.png' %}" width="140px" class="logo-icon"alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav >                              
+                                    <ul id="navigation">    
+                                        <li><a href="{% url 'home'%}">Home</a></li>
+                                        <li><a href="{% url 'venue'%}"  target="_blank">Venues</a></li>
+                                        <li><a href="{% url 'events'%}">Events</a>
+                                            
+                                        </li>
+                                        <li><a href="{% url 'decoration'%}">Decoration</a></li>
+                                        
+                                        <li><a href="#contact" '>Contact</a></li>
+                                        <li><a href="{% url 'register'%}"target="_blank">Login</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
     </header>
+
     <div class="main">
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/17.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/16.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/35.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/7.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/17.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/16.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/35.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/7.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">PHOTO TANTRA</h1>
@@ -55,12 +108,12 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/58.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/21.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/19.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/37.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/58.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/21.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/19.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/37.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">LK ARTS PHOTOGRAPHY</h1>
@@ -78,12 +131,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/28.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/61.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/6.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/62.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/28.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/61.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/6.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/62.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">THE PHOTO DIARY</h1>
@@ -102,12 +155,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/25.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/63.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/34.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/golden pillar red p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/25.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/63.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/34.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/golden pillar red p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">EDRIC GEORGE PHOTOGRAPHY</h1>
@@ -126,12 +179,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/26.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/65.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/41.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/64.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/26.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/65.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/41.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/64.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">MARK SWAROOP PHOTOGRAPHY</h1>
@@ -150,12 +203,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/38.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/68.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/51.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/71.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/38.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/68.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/51.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/71.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head"> ANUP J KAT STUDIO</h1>
@@ -173,12 +226,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/48.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/black and white p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/49.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/black and white p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/48.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/black and white p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/49.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/black and white p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">RAHUL DE CUNHA PICTURES</h1>
@@ -196,12 +249,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/56.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/wooden p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/60.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/69.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/56.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/wooden p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/60.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/69.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">ROHITH RAVI PHOTOGRAPHY</h1>
@@ -219,12 +272,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/42.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/66.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/44.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/70.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/42.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/66.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/44.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/70.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">RETINA CHARMER PHOTOGRAPHY</h1>
@@ -242,12 +295,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/24.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/hanging-bells p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/50.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/67.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/24.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/hanging-bells p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/50.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/67.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">SHAADIGRAPHER</h1>
@@ -265,12 +318,12 @@
                   <p class="card-text">Contact No.-92*******2</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/photography/55.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/floral-pink p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/photography/39.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/photography/floral-pink p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/photography/55.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/floral-pink p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/photography/39.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/photography/floral-pink p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">THE WED CAFE</h1>
@@ -291,6 +344,39 @@
         
     </div>
     <div class="blur"></div>
+    <script src="{% static 'home/assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{% static 'home/assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/bootstrap.min.js' %}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{% static 'home/assets/js/jquery.slicknav.min.js' %}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{% static 'home/assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/slick.min.js' %}"></script>
+    <!-- Date Picker -->
+    <script src="{% static 'home/assets/js/gijgo.min.js' %}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{% static 'home/assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/animated.headline.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.magnific-popup.js' %}"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="{% static 'home/assets/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.sticky.js' %}"></script>
+    
+    <!-- contact js -->
+    <script src="{% static 'home/assets/js/contact.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.form.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'home/assets/js/mail-script.js' %}"></script>
+    <script src="{% static 'home/assets/js/jquery.ajaxchimp.min.js' %}"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="{% static 'home/assets/js/plugins.js' %}"></script>
+    <script src="{% static 'home/assets/js/main.js' %}"></script>
 
 </body>
 </html>

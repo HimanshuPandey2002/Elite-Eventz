@@ -12,9 +12,12 @@
         background-size: cover;
         }
     </style>
+    <link rel="stylesheet" href="{% static 'home/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'home/assets/css/style.css' %}">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <a href="{% url 'decoration'%}"><img src="{% static 'home/assets/img/decoration/logo.png' %}" alt="" class="logo"></a>
         <ul class="links">
             <li><a href="{% url 'home'%}" class="link">Home</a></li>
@@ -24,14 +27,53 @@
             <li><a href="{% url 'home'%}#contact" class="link">Contact</a></li>
             <li><a href="{% url 'register'%}" class="link">Login</a></li>
         </ul>
+    </header> -->
+
+    <header>
+        <!-- Header Start -->
+       <div class="header-area">
+            <div class="main-header ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <div class="logo">
+                                <a href="{% url 'home'%}"><img src="{% static 'home/assets/img/logo/logo.png' %}" width="140px" class="logo-icon"alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav >                              
+                                    <ul id="navigation">    
+                                        <li><a href="{% url 'home'%}">Home</a></li>
+                                        <li><a href="{% url 'venue'%}"  target="_blank">Venues</a></li>
+                                        <li><a href="{% url 'events'%}">Events</a></li>
+                                        <li><a href="{% url 'photography'%}">Photography</a></li>
+                                        <li><a href="{% url 'home'%}#contact" '>Contact</a></li>
+                                        <li><a href="{% url 'register'%}"target="_blank">Login</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
     </header>
+
     <div class="main">
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/blue l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/blue p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/blue l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/blue p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/blue l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/blue p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/blue l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/blue p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">ALL SHADES OF BLUE DECOR</h1>
@@ -39,12 +81,12 @@
                 <button class="btn">Book Now</button>
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/glass l1.jpeg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/glass p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/glass l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/glass p2.jpeg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/glass l1.jpeg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/glass p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/glass l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/glass p2.jpeg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">GLASS DECOR</h1>
@@ -54,12 +96,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/royal l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/royal p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/royal l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/royal p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/royal l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/royal p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/royal l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/royal p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">ROYAL RAJASTHANI DECOR</h1>
@@ -68,12 +110,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/golden pillar red l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/golden piller red p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/golden pillar red l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/golden pillar red p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/golden pillar red l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/golden piller red p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/golden pillar red l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/golden pillar red p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">GOLDEN PILLARS WITH RED DECOR</h1>
@@ -82,12 +124,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/white l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/white p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/white l2.jpeg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/white p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/white l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/white p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/white l2.jpeg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/white p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">WHITE FLOWERS AND WHITE DRAPES</h1>
@@ -96,12 +138,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/floral canopies l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/floral canopies p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/floral canopies l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/floral canopies p1.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/floral canopies l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/floral canopies p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/floral canopies l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/floral canopies p1.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">FLORAL CANOPIES</h1>
@@ -110,12 +152,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/black and white l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/black and white p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/black and white l2.png' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/black and white p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/black and white l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/black and white p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/black and white l2.png' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/black and white p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">THE BLACK AND WHITE DECOR</h1>
@@ -124,12 +166,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/wooden l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/wooden p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/wooden l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/wooden p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/wooden l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/wooden p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/wooden l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/wooden p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">WOODEN AND GOLDEN DECOR</h1>
@@ -138,12 +180,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/palm tree and wooden l1.jpeg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/palm tree and wooden p1.webp' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/palm tree and wooden l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/palm tree and wooden p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/palm tree and wooden l1.jpeg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/palm tree and wooden p1.webp' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/palm tree and wooden l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/palm tree and wooden p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">PALM LEAVES AND WOODEN DECOR</h1>
@@ -152,12 +194,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/hanging-bells l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/hanging-bells p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/hanging-bells l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/hanging-bells p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/hanging-bells l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/hanging-bells p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/hanging-bells l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/hanging-bells p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">HANGING BELLS AND LIGHT DECOR</h1>
@@ -166,12 +208,12 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container12">
             <div class="img-sec">
-                <img src="{% static 'home/assets/img/decoration/floral-pink l1.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/floral-pink p1.jpg' %}" alt="" class="img portrait">
-                <img src="{% static 'home/assets/img/decoration/floral-pink l2.jpg' %}" alt="" class="img landscape">
-                <img src="{% static 'home/assets/img/decoration/floral-pink p2.jpg' %}" alt="" class="img portrait">
+                <img src="{% static 'home/assets/img/decoration/floral-pink l1.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/floral-pink p1.jpg' %}" alt="" class="img1 portrait">
+                <img src="{% static 'home/assets/img/decoration/floral-pink l2.jpg' %}" alt="" class="img1 landscape">
+                <img src="{% static 'home/assets/img/decoration/floral-pink p2.jpg' %}" alt="" class="img1 portrait">
             </div>
             <div class="written">
                 <h1 class="head">FLORAL PINK DECOR</h1>
@@ -183,5 +225,38 @@
     </div>
     <div class="blur"></div>
     <script src="./app.js"></script>
+    <script src="{% static 'home/assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="{% static 'home/assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'home/assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'home/assets/js/bootstrap.min.js' %}"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="{% static 'home/assets/js/jquery.slicknav.min.js' %}"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="{% static 'home/assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'home/assets/js/slick.min.js' %}"></script>
+        <!-- Date Picker -->
+        <script src="{% static 'home/assets/js/gijgo.min.js' %}"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="{% static 'home/assets/js/wow.min.js' %}"></script>
+		<script src="{% static 'home/assets/js/animated.headline.js' %}"></script>
+        <script src="{% static 'home/assets/js/jquery.magnific-popup.js' %}"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="{% static 'home/assets/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'home/assets/js/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'home/assets/js/jquery.sticky.js' %}"></script>
+        
+        <!-- contact js -->
+        <script src="{% static 'home/assets/js/contact.js' %}"></script>
+        <script src="{% static 'home/assets/js/jquery.form.js' %}"></script>
+        <script src="{% static 'home/assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'home/assets/js/mail-script.js' %}"></script>
+        <script src="{% static 'home/assets/js/jquery.ajaxchimp.min.js' %}"></script>
+        
+		<!-- Jquery Plugins, main Jquery	 -->
+        <script src="{% static 'home/assets/js/plugins.js' %}"></script>
+        <script src="{% static 'home/assets/js/main.js' %}"></script>
 </body>
 </html>
