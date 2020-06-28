@@ -14,4 +14,6 @@ urlpatterns = [
     path('decoration/', d_views.dec, name='decoration'),
     path('events/', e_views.event, name='events'),
     path('photography/', p_views.photo, name='photography'),
+    path('about/', include('home.urls')),
+    path('FAQs/', include('home.urls')),
 ]
